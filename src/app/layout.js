@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
            <Navbar/>
         </header>
         <main className="pt-16 text-white bg-gray-900 ">
-          <div className="px-6 max-w-7xl mx-auto min-h-[calc(100vh-318px)]">
+          <div className="px-6 max-w-7xl mx-auto min-h-[calc(100vh-341px)]">
                {children}
           </div>
         </main>
