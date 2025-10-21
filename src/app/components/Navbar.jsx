@@ -27,14 +27,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-white/60 shadow-md"
+          ? "backdrop-blur-md bg-gray-200/5 shadow-md"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-green-600">
-          MJS Agency
+        <Link href="/" className="text-2xl font-bold text-blue-600">
+          TAOSIF SADHIN
         </Link>
 
         {/* Desktop Menu */}
@@ -47,10 +47,10 @@ export default function Navbar() {
                   href={link.path}
                   className={`relative pb-1 transition-colors duration-300 ${
                     isActive
-                      ? "text-green-600"
-                      : "text-gray-700 hover:text-green-600"
+                      ? "text-blue-600"
+                      : "text-white hover:text-blue-600"
                   } 
-                  before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-green-600 
+                  before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-blue-600 
                   before:transition-all before:duration-300 hover:before:w-full`}
                 >
                   {link.name}
@@ -63,7 +63,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-2xl text-gray-700"
+          className="md:hidden text-2xl text-blue-700 "
         >
           {menuOpen ? "✖" : "☰"}
         </button>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden bg-white/90 backdrop-blur-md shadow-md text-center font-medium text-gray-700 py-4 space-y-3 transition-all duration-300">
+        <ul className="md:hidden  backdrop-blur-md shadow-md text-center font-medium text-white/60 py-4 space-y-3 transition-all duration-300">
           {links.map((link) => {
             const isActive = pathname === link.path;
             return (
@@ -81,8 +81,8 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className={`block py-1 ${
                     isActive
-                      ? "text-green-600 font-semibold"
-                      : "hover:text-green-600"
+                      ? "text-blue-600 font-semibold"
+                      : "hover:text-blue-600"
                   }`}
                 >
                   {link.name}
