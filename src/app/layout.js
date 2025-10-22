@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GlowingCursor from "./components/GlowingCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
            <Navbar/>
         </header>
         <main className="pt-16 text-white bg-gray-900 ">
-          <div className="px-6 max-w-7xl mx-auto min-h-[calc(100vh-341px)]">
+          <div className="px-6  max-w-7xl mx-auto min-h-[calc(100vh-341px)]">
+               <GlowingCursor/>
                {children}
           </div>
         </main>
