@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-gray-200/5 shadow-md"
+          ? "backdrop-blur-md  shadow-2xl"
           : "bg-transparent"
       }`}
     >
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden  backdrop-blur-md shadow-md text-center font-medium text-white/60 py-4 space-y-3 transition-all duration-300">
+        <ul className="md:hidden bg-white/10 backdrop-blur-md  shadow-2xl text-center font-medium text-white py-4 space-y-3 transition-all duration-300">
           {links.map((link) => {
             const isActive = pathname === link.path;
             return (
@@ -81,7 +81,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className={`block py-1 ${
                     isActive
-                      ? "text-blue-600 font-semibold"
+                      ? "text-blue-500  font-semibold"
                       : "hover:text-blue-600"
                   }`}
                 >
