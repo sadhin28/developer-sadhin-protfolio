@@ -13,7 +13,7 @@ export default function Home() {
   };
   return (
     <div className="p-2">
-      <div className="p-10 shadow-xl rounded-xl  grid gap-3 md:grid-cols-12">
+      <div className="hover:shadow-xl py-10 rounded-xl  grid gap-8 md:grid-cols-12">
         <div className="text-xl  md:text-4xl  font-bold content-center  w-full  col-span-6">
           {/* user TypeWriter */}
           <div className="flex justify-center md:justify-start">
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="text-2xl  font-bold content-center  w-full  col-span-6">
           {/* user image */}
           <div className="flex rounded-full  justify-center md:justify-end">
-            <Image src={protfolioImg} alt="Profile Image" className="rounded-full w-72 h-72 shadow-2xl hover:shadow-blue-700  border-10 border-white/20 object-cover transition-transform duration-300 hover:scale-105" />
+            <Image src={protfolioImg} alt="Profile Image" className="hover:rotate-360 transform-3d duration-2000 hover:backdrop-hue-rotate-90 rounded-full w-72 h-72 shadow-2xl hover:shadow-blue-700  border-10 border-white/20 object-cover transition-transform  hover:scale-105" />
           </div>
 
         </div>
