@@ -27,7 +27,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="max-w-7xl mx-auto p-4 mt-10">
-      <h2 className="text-xl md:text-2xl font-bold text-white mb-8 text-center">My GitHub <span className="text-blue-600">Projects</span></h2>
+      <h2 className="text-xl md:text-2xl font-bold text-white mb-8 text-center">My GitHub <span className="text-blue-600">Repositories</span></h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentRepos.map((repo) => (
@@ -36,9 +36,9 @@ export default function Projects() {
             href={repo.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-6 border-2 border-gray-600 hover:border-green-500  bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 duration-300"
+            className="p-6 border-2  border-gray-600 hover:border-blue-500  bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 duration-300"
           >
-            <h3 className="text-xl font-semibold text-blue-500 mb-2">{repo.name}</h3>
+            <h3 className=" text-xl font-semibold  text-blue-600 mb-2">{repo.name}</h3>
             <p className="text-gray-300 mb-4">{repo.description || "No description"}</p>
             <div className="flex justify-between text-gray-400 text-sm">
               <span>{repo.language || "N/A"}</span>

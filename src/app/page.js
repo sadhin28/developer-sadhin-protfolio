@@ -6,7 +6,7 @@ import Image from "next/image";
 import { div } from "framer-motion/client";
 import Myskills from "./components/Myslills";
 import GitHubContributions from "./components/GitHubContributions";
-import Projects from "./components/Projects";
+import Projects from "./components/Repositories";
 export default function Home() {
   const handleClick = () => {
     // Open Google Drive link in a new tab
