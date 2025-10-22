@@ -39,13 +39,13 @@ export default function SkillsMarque() {
         .animate-marquee {
           display: flex;
           white-space: nowrap;
-          animation: marquee 18s linear infinite;
+          animation: marquee 18s linear  infinite;
         }
 
         .animate-marquee2 {
           display: flex;
           white-space: nowrap;
-          animation: marquee2 18s linear infinite;
+          animation: marquee2 40s linear infinite;
         }
 
         @keyframes marquee {
