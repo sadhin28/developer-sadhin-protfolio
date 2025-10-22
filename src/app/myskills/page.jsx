@@ -17,7 +17,7 @@ export default function SkillsPage() {
         <h2 className="text-3xl font-semibold mb-6">🧠 Technical Skills</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Frontend */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition  border-blue-300 border duration-300 hover:shadow-blue-300">
             <h3 className="text-2xl font-semibold mb-4 text-sky-400">Frontend</h3>
             <ul className="space-y-2 text-lg">
               <li>HTML, CSS, JavaScript (ES6+)</li>
@@ -27,7 +27,7 @@ export default function SkillsPage() {
           </div>
 
           {/* Backend */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition  border-green-300 border duration-300 hover:shadow-green-300">
             <h3 className="text-2xl font-semibold mb-4 text-green-400">Backend</h3>
             <ul className="space-y-2 text-lg">
               <li>Node.js, Express.js</li>
@@ -37,7 +37,7 @@ export default function SkillsPage() {
           </div>
 
           {/* Tools */}
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition border-amber-300 border duration-300 hover:shadow-yellow-300">
             <h3 className="text-2xl font-semibold mb-4 text-yellow-400">Tools & Others</h3>
             <ul className="space-y-2 text-lg">
               <li>Git & GitHub</li>
