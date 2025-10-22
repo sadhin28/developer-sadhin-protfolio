@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect";
 import protfolioImg from '../../public/protfolioImg.png'
 import Link from "next/link";
 import Image from "next/image";
+import { div } from "framer-motion/client";
+import Myskills from "./components/Myslills";
 export default function Home() {
   const handleClick = () => {
     // Open Google Drive link in a new tab
@@ -12,7 +14,8 @@ export default function Home() {
     );
   };
   return (
-    <div className="p-2">
+   <div>
+      <div className="p-2">
       <div className="hover:shadow-xl py-10 rounded-xl  grid gap-8 md:grid-cols-12">
         <div className="text-xl  md:text-4xl  font-bold content-center  w-full  col-span-6">
           {/* user TypeWriter */}
@@ -49,5 +52,10 @@ export default function Home() {
 
       </div>
     </div>
+    {/* add my skilss component */}
+      <div>
+         <Myskills/>
+      </div>
+   </div>
   );
 }
