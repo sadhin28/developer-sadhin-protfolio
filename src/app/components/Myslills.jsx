@@ -62,16 +62,16 @@ export default function Myskills() {
       <section className="mt-20 text-center">
         <h2 className="text-3xl font-semibold mb-6">🧰 Tools & Technologies</h2>
         <div className="flex flex-wrap justify-center gap-10 text-5xl">
-          <FaReact className="text-cyan-400 hover:shadow-2xl hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiNextdotjs className="text-white hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiTailwindcss className="text-sky-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <FaNodeJs className="text-green-500 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiExpress className="text-gray-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiMongodb className="text-green-600 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiFirebase className="text-yellow-500 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <FaGitAlt className="text-orange-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <SiVercel className="text-gray-300 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
-          <FaFigma className="text-pink-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer "/>
+          <FaReact className="animate-pulse hover:animate-none text-cyan-400 hover:shadow-2xl hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
+          <SiNextdotjs className="text-white hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <SiTailwindcss className="text-sky-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <FaNodeJs className="text-green-500 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <SiExpress className="text-gray-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <SiMongodb className="text-green-600 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <SiFirebase className="text-yellow-500 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <FaGitAlt className="text-orange-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <SiVercel className="text-gray-300 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none" />
+          <FaFigma className="text-pink-400 hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer animate-pulse hover:animate-none "/>
         </div>
       </section>
 
