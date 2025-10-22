@@ -45,9 +45,9 @@ export default function Navbar() {
               <li key={link.path} className="relative">
                 <Link
                   href={link.path}
-                  className={`relative pb-1 transition-colors duration-300 ${
+                  className={`relative  font-bold pb-1 transition-colors duration-300 ${
                     isActive
-                      ? "text-blue-600"
+                      ? "text-blue-600 "
                       : "text-white hover:text-blue-600"
                   } 
                   before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-blue-600 
