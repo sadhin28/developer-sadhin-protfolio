@@ -60,7 +60,7 @@ export default function MyScills() {
 
       {/* 4️⃣ Tools & Technologies Icons */}
       <section className="mt-20 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6">🧰 Tools & Technologies</h2>
+         <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white">🧰 Tools & </span>Technologies </div>
         <div className="flex flex-wrap justify-center gap-10 text-5xl">
           <FaReact className="text-cyan-400 hover:shadow-2xl hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
           <SiNextdotjs className="text-white hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
