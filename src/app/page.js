@@ -76,7 +76,7 @@ export default function Home() {
                className="rounded"
                type="submit"
                 color="red"
-                idleText='Hire Me'
+                idleText='HIRE ME'
                 size="lerge"
             />
 
