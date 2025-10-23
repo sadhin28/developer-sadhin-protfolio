@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const REPOS_PER_PAGE =12;
+const REPOS_PER_PAGE =15;
 
 export default function Projects() {
   const [repos, setRepos] = useState([]);
