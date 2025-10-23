@@ -7,7 +7,10 @@ import { div } from "framer-motion/client";
 import Myskills from "./components/Myslills";
 import GitHubContributions from "./components/GitHubContributions";
 import Projects from "./components/Repositories";
+import useTitle from "@/hook/useTitle";
 export default function Home() {
+
+  useTitle("HOME")
   const handleClick = () => {
     // Open Google Drive link in a new tab
     window.open(
