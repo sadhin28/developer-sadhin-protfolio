@@ -2,19 +2,19 @@
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiFirebase, SiExpress, SiVercel } from "react-icons/si";
 import SkillsMarque from "../components/SkillMarque";
-import { FaComputer } from "react-icons/fa6";
 
 export default function MyScills() {
   return (
     <div className=" text-white py-16 ">
-      <h1 className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"><FaComputer/><span className="text-white"> My Skills & Expertise</span></h1>
+      <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> My Skills<span className="text-white">  & Expertise</span></div>
 
       {/*  Skills Marquee Section */}
       <SkillsMarque />
 
       {/* Technical Skills */}
       <section className="mt-16 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6">🧠 Technical Skills</h2>
+        <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white"> Technical &</span> Expertise</div>
+        
         <div className="grid md:grid-cols-3 gap-8">
           {/* Frontend */}
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition  border-blue-300 border duration-300 hover:shadow-blue-300">
@@ -50,7 +50,7 @@ export default function MyScills() {
 
       {/* 3️⃣ Professional Expertise */}
       <section className="mt-20 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6">🚀 Professional Expertise</h2>
+        <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white">🚀 Professional</span>Expertise </div>
         <p className="max-w-7xl mx-auto text-gray-300 text-lg leading-relaxed">
           I specialize in building modern, responsive web applications using the MERN stack and Next.js.
           My focus is on creating efficient, scalable, and user-friendly solutions.
