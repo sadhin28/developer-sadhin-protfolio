@@ -8,6 +8,9 @@ import Myskills from "./components/Myslills";
 import GitHubContributions from "./components/GitHubContributions";
 import Projects from "./components/Repositories";
 import useTitle from "@/hook/useTitle";
+import About from "./components/About";
+import ContactForm from "./components/Contact";
+import ReactiveButton from "reactive-button";
 export default function Home() {
 
   useTitle("HOME")
@@ -22,7 +25,7 @@ export default function Home() {
    <div>
       <div className="p-2">
       <div className=" py-10 rounded-xl  grid gap-8 md:grid-cols-12">
-        <div className="text-xl  md:text-4xl  font-bold content-center  w-full  col-span-6">
+        <div className="text-xl  md:text-3xl  font-bold content-center  w-full  col-span-6">
           {/* user TypeWriter */}
           <div className="flex justify-center md:justify-start">
             <Typewriter
@@ -30,7 +33,9 @@ export default function Home() {
               options={{
                 strings: [
                   "Hi, I Am Taosif Bin Sadhin",
-                  "MERN Stack Web Developer 💻",
+                  "I Am A MERN Stack Web Developer 💻",
+                  "CMS Expert With Wix and Velo ",
+                  
 
                 ],
                 autoStart: true,
@@ -52,20 +57,53 @@ export default function Home() {
 
       </div>
       <div className="py-5 flex items-center justify-center gap-11">
-        <button onClick={handleClick} className="rounded-[8px] text-center hover:bg-green-500 font-bold hover:text-black shadow-2xl  hover:shadow-green-500 transform-flat animate-pulse hover:animate-none  duration-1000 cursor-pointer border hover:border-0 py-1 px-2 text-xl ">Download Cv</button>
-        <Link href="/contact" className="rounded-[8px] text-center hover:bg-blue-500 hover:text-black font-bold shadow-2xl hover:shadow-green-500 cursor-pointer border duration-1000 hover:border-0  py-1 px-2 text-xl ">Hire Me</Link>
+        
+        <div className="text-center">
+          <ReactiveButton outline
+             className="rounded"
+             type="submit"
+              color="blue"
+              idleText='DOWNLOAD CV'
+              size="lerge"
+              onClick={handleClick}
+          />
+
+                                </div>
+       
+        <Link href="/contact" >
+           <div className="text-center">
+            <ReactiveButton outline
+               className="rounded"
+               type="submit"
+                color="red"
+                idleText='Hire Me'
+                size="lerge"
+            />
+
+            </div>
+        </Link>
 
       </div>
     </div>
-    {/* add my skilss component */}
+    {/*about */}
+       <div>
+        <About/>
+       </div>
+       {/* My Skills */}
       <div>
          <Myskills/>
       </div>
+      {/* Github Contrubutions */}
       <div>
         <GitHubContributions/>
       </div>
+      {/* My gihub ripos */}
       <div>
         <Projects/>
+      </div>
+      {/* Contact */}
+      <div>
+        <ContactForm/>
       </div>
    </div>
   );
