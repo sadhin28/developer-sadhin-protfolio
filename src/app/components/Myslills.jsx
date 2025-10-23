@@ -77,7 +77,7 @@ export default function MyScills() {
 
       {/* 5️⃣ Soft Skills */}
       <section className="mt-20 text-center">
-        <h2 className=" text-xl md:text-2xl font-semibold mb-6">💬 Soft Skills</h2>
+         <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white">💬 Soft </span>Skills</div>
         <div className="flex flex-wrap justify-center gap-4 text-lg">
           <span className="bg-white/10 px-6 py-2 rounded-full">Teamwork</span>
           <span className="bg-white/10 px-6 py-2 rounded-full">Communication</span>
