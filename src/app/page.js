@@ -70,14 +70,15 @@ export default function Home() {
 
                                 </div>
        
-        <Link href="/contact" >
+        <Link href="/contact"  >
            <div className="text-center">
             <ReactiveButton outline
                className="rounded"
                type="submit"
-                color="red"
+                color="green"
                 idleText='HIRE ME'
                 size="lerge"
+                
             />
 
             </div>
