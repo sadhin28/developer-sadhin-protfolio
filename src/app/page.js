@@ -50,7 +50,7 @@ export default function Home() {
         <div className="text-2xl  font-bold content-center  w-full  col-span-6">
           {/* user image */}
           <div className="flex rounded-full  justify-center md:justify-end">
-            <Image src={protfolioImg} alt="Profile Image" className=" hover:animate-none transform-3d duration-3000 hover:backdrop-hue-rotate-360 rounded-full w-72 h-72 shadow-2xl hover:shadow-blue-700  border-10 border-blue-600/20  hover:border-y-green-600   object-cover  transform-view  hover:scale-105" />
+            <Image src={protfolioImg} alt="Profile Image" className=" hover:animate-none transform-3d duration-3000 hover:backdrop-hue-rotate-360 rounded-full w-72 h-72 shadow-2xl hover:shadow-blue-700  border-10 border-blue-600/20  hover:border-blue-600   object-cover  transform-view  hover:scale-105" />
           </div>
 
         </div>
