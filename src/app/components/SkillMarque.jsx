@@ -27,7 +27,7 @@ export default function SkillsMarque() {
           {marqueeSkills.map((skill, i) => (
             <div
               key={i}
-              className="flex hover:shadow-blue-500  items-center gap-2 text-xl font-semibold px-4 py-2 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg"
+              className="flex hover:shadow-blue-500 duration-300 items-center gap-2 text-xl font-semibold px-4 py-2 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg"
             >
               {skill.icon}
               <span>{skill.name}</span>
