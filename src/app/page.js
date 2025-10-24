@@ -25,7 +25,7 @@ export default function Home() {
    <div>
       <div className="p-2">
       <div className=" py-10 rounded-xl  grid gap-8 md:grid-cols-12">
-        <div className="text-xl  md:text-3xl  font-bold content-center  w-full  col-span-6">
+        <div className="md:text-3xl  font-bold content-center  w-full  col-span-6">
           {/* user TypeWriter */}
           <div className="flex justify-center md:justify-start">
             <Typewriter
@@ -33,7 +33,7 @@ export default function Home() {
               options={{
                 strings: [
                   "Hi, I Am Taosif Bin Sadhin",
-                  "I Am A MERN Stack Web Developer 💻",
+                  "I Am A MERN Stack Web Developer",
                   "CMS Expert With Wix and Velo ",
                   
 
