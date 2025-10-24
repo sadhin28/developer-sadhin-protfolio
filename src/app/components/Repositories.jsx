@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const REPOS_PER_PAGE =15;
+const REPOS_PER_PAGE = 15;
 
 export default function Projects() {
   const [repos, setRepos] = useState([]);
@@ -9,7 +9,9 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/sadhin28/repos?sort=updated&per_page=100")
+    fetch(
+      "https://api.github.com/users/sadhin28/repos?sort=updated&per_page=100"
+    )
       .then((res) => res.json())
       .then((data) => {
         setRepos(data);
@@ -18,7 +20,8 @@ export default function Projects() {
       .catch((err) => console.error(err));
   }, []);
 
-  if (loading) return <p className="text-white text-center mt-10">Loading...</p>;
+  if (loading)
+    return <p className="text-white text-center mt-10">Loading...</p>;
 
   const indexOfLastRepo = currentPage * REPOS_PER_PAGE;
   const indexOfFirstRepo = indexOfLastRepo - REPOS_PER_PAGE;
@@ -27,7 +30,9 @@ export default function Projects() {
 
   return (
     <section id="projects" className="max-w-7xl mx-auto p-4 mt-10">
-      <h2 className="text-xl md:text-2xl font-bold text-white mb-8 text-center">My GitHub <span className="text-blue-600">Repositories</span></h2>
+      <h2 className="text-xl md:text-2xl font-bold text-white mb-8 text-center">
+        My GitHub <span className="text-blue-600">Repositories</span>
+      </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentRepos.map((repo) => (
@@ -36,11 +41,15 @@ export default function Projects() {
             href={repo.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-6 border-2 shadow-2xl hover:shadow-blue-500  border-gray-600 hover:border-blue-500  bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 duration-300"
+            className="p-6 border-2 border-gray-600 bg-gray-800 rounded-xl shadow-2xl hover:shadow-blue-500 hover:border-blue-500 hover:shadow-lg transition transform hover:-translate-y-1 duration-300 flex flex-col h-full"
           >
-            <h3 className=" text-xl font-semibold  text-blue-600 mb-2">{repo.name}</h3>
-            <p className="text-gray-300 mb-4">{repo.description || "No description"}</p>
-            <div className="flex justify-between text-gray-400 text-sm">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+              {repo.name}
+            </h3>
+            <p className="text-gray-300 mb-4 flex-grow">
+              {repo.description || "No description"}
+            </p>
+            <div className="flex justify-between text-gray-400 text-sm mt-auto">
               <span>{repo.language || "N/A"}</span>
               <span>⭐ {repo.stargazers_count}</span>
             </div>
@@ -49,7 +58,7 @@ export default function Projects() {
       </div>
 
       {/* Pagination Buttons */}
-      <div className="flex justify-center mt-8 gap-2">
+      <div className="flex justify-center mt-8 gap-2 text-xs md:text-[18px]">
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
@@ -65,7 +74,7 @@ export default function Projects() {
             className={`px-4 py-2 rounded ${
               currentPage === idx + 1
                 ? "bg-blue-500 text-white"
-                : "bg-gray-700 text-white hover:bg-blue-600"
+                : "bg-gray-700 text-white"
             }`}
           >
             {idx + 1}
@@ -73,7 +82,9 @@ export default function Projects() {
         ))}
 
         <button
-          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          onClick={() =>
+            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+          }
           disabled={currentPage === totalPages}
           className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
         >
