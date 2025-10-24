@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-500 mb-3">Shadin</h2>
+          <h2 className="text-2xl font-bold text-blue-500 mb-3"><span className="text-white">TAOSIF </span>SADHIN</h2>
           <p className="text-sm leading-6">
             I’m a passionate Frontend & Full-Stack Developer who loves creating
             modern, responsive, and high-quality web experiences.
