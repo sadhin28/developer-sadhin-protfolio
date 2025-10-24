@@ -17,52 +17,38 @@ export default function SkillsMarque() {
     { name: "Git", icon: <FaGitAlt className="text-orange-400" /> },
   ];
 
+  // Duplicate for seamless scroll
+  const marqueeSkills = [...skills, ...skills];
+
   return (
-    <section className="relative py-10  from-gray-900 to-gray-800 text-white overflow-hidden">
-     
-      {/* Marquee Container */}
-      <div className="flex space-x-12 animate-marquee">
-        {skills.map((skill, i) => (
-          <div
-            key={i}
-            className="flex items-center gap-2 text-xl font-semibold px-4 py-2 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            {skill.icon}
-            <span>{skill.name}</span>
-          </div>
-        ))}
-        
+    <section className="relative py-10 overflow-hidden">
+      <div className="flex w-max whitespace-nowrap">
+        <div className="flex animate-marquee gap-6">
+          {marqueeSkills.map((skill, i) => (
+            <div
+              key={i}
+              className="flex hover:shadow-blue-500  items-center gap-2 text-xl font-semibold px-4 py-2 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg"
+            >
+              {skill.icon}
+              <span>{skill.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Animation CSS */}
       <style jsx>{`
         .animate-marquee {
           display: flex;
-          white-space: nowrap;
-          animation: marquee 18s linear  infinite;
-        }
-
-        .animate-marquee2 {
-          display: flex;
-          white-space: nowrap;
-          animation: marquee2 40s linear infinite;
+          gap: 1.5rem;
+          animation: marquee 25s linear infinite;
         }
 
         @keyframes marquee {
           0% {
-            transform: translateX(100%);
+            transform: translateX(0%);
           }
           100% {
-            transform: translateX(-100%);
-          }
-        }
-
-        @keyframes marquee2 {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-200%);
+            transform: translateX(-50%);
           }
         }
       `}</style>
