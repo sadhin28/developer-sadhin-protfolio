@@ -132,7 +132,7 @@ const ContactForm = () => {
 
                 <div>
                     <section className="w-full  px-4 py-12  text-white">
-                        <div className="bg-gray-900/20 p-8 rounded-lg shadow-md border hover:shadow-lg hover:border-blue-600 hover:shadow-blue-500">
+                        <div className="bg-gray-900/20 p-8 rounded-lg shadow-md border hover:shadow-lg ">
 
                             <form onSubmit={sendEmail} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

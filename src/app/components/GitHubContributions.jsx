@@ -62,7 +62,7 @@ const GitHubContributions = () => {
             id="year-select"
             value={year}
             onChange={(e) => setYear(parseInt(e.target.value))}
-            className={`bg-[#222E3FFF] text-white p-2 rounded-xl border border-gray-700 ${
+            className={`border-2 p-2 border-gray-600 bg-gray-800 rounded-xl shadow-2xl hover:shadow-blue-500 hover:border-blue-500 hover:shadow-lg transition transform hover:-translate-y-1 duration-600 ${
               selectFullWidth ? "w-full" : "w-full"
             }`}
           >
@@ -76,7 +76,7 @@ const GitHubContributions = () => {
 
         {/* GitHub Calendar */}
         <div
-          className={` p-5 border-gray-700 rounded-xl hover:border-blue-600 border-2 overflow-x-auto md:w-full ${containerPadding} w-full max-w-4xl`}
+          className={` p-5 border-2 border-gray-600 bg-gray-800 rounded-xl shadow-2xl hover:shadow-blue-500 hover:border-blue-500 hover:shadow-lg transition transform hover:-translate-y-1 duration-600 overflow-x-auto md:w-full ${containerPadding} w-full max-w-4xl`}
           style={{ WebkitOverflowScrolling: "touch" }}
         >
           <GitHubCalendar
