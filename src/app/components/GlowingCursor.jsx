@@ -1,30 +1,38 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-export default function ResponsiveGlowCursor() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
+export default function DeepBlueShadowCursor() {
   useEffect(() => {
-    const handleMove = (e) => {
-      // detect touch or mouse
-      const x = e.touches ? e.touches[0].clientX : e.clientX;
-      const y = e.touches ? e.touches[0].clientY : e.clientY;
+    const cursor = document.createElement("div");
 
-      setPosition({ x, y });
+    Object.assign(cursor.style, {
+      position: "fixed",
+      top: "0px",
+      left: "0px",
+      width: "0px",
+      height: "0px",
+      pointerEvents: "none",
+      zIndex: 9999,
+      transform: "translate(-50%, -50%)",
+      boxShadow: "0 0 40px 20px rgba(0, 50, 200, 0.6)", // deep blue shadow
+      borderRadius: "50%",
+      transition: "top 0.05s ease, left 0.05s ease",
+    });
 
-      // update CSS variables for animation
-      document.documentElement.style.setProperty("--x", `${x}px`);
-      document.documentElement.style.setProperty("--y", `${y}px`);
+    document.body.appendChild(cursor);
+
+    const moveCursor = (e) => {
+      cursor.style.top = e.clientY + "px";
+      cursor.style.left = e.clientX + "px";
     };
 
-    window.addEventListener("mousemove", handleMove);
-    window.addEventListener("touchmove", handleMove, { passive: true });
+    window.addEventListener("mousemove", moveCursor);
 
     return () => {
-      window.removeEventListener("mousemove", handleMove);
-      window.removeEventListener("touchmove", handleMove);
+      window.removeEventListener("mousemove", moveCursor);
+      document.body.removeChild(cursor);
     };
   }, []);
 
-  return <div className="pointer-events-none fixed top-0 left-0 w-screen h-screen z-[9999] glow-bg"></div>;
+  return null;
 }
