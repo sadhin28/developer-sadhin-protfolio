@@ -27,14 +27,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md  shadow-2xl"
+          ? "backdrop-blur-md py-3 shadow-2xl"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600">
-          TAOSIF SADHIN
+          <span className="text-white">TAOSIF</span> SADHIN
         </Link>
 
         {/* Desktop Menu */}
