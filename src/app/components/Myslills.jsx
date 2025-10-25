@@ -5,14 +5,14 @@ import SkillsMarque from "../components/SkillMarque";
 
 export default function MyScills() {
   return (
-    <div className=" text-white py-16 ">
+    <div className=" text-white py-10 ">
       <div className="text-xl md:text-2xl font-bold text-center mb-5 flex items-center justify-center gap-4 text-blue-500"> My Skills<span className="text-white">  & Expertise</span></div>
 
       {/*  Skills Marquee Section */}
       <SkillsMarque />
 
       {/* Technical Skills */}
-      <section className="mt-10 text-center">
+      <section className="md:mt-10 mt-5 text-center">
         <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white"> Technical &</span> Expertise</div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -49,7 +49,7 @@ export default function MyScills() {
       </section>
 
       {/* 3️⃣ Professional Expertise */}
-      <section className="mt-20 text-center">
+      <section className="mt-10 text-center">
         <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white">🚀 Professional</span>Expertise </div>
         <p className="max-w-7xl mx-auto text-gray-300 text-lg leading-relaxed">
           I specialize in building modern, responsive web applications using the MERN stack and Next.js.
@@ -59,7 +59,7 @@ export default function MyScills() {
       </section>
 
       {/* 4️⃣ Tools & Technologies Icons */}
-      <section className="mt-20 text-center">
+      <section className="mt-10 text-center">
          <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white">🧰 Tools & </span>Technologies </div>
         <div className="flex flex-wrap justify-center gap-10 text-5xl">
           <FaReact className="text-cyan-400 hover:shadow-2xl hover:shadow-green-400 transform-3d hover:rotate-360 duration-1000 cursor-pointer" />
