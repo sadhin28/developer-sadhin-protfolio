@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md py-1 md:py-2 lg:py-3 shadow-2xl"
+          ? "backdrop-blur-md py-0 md:py-2  shadow-2xl"
           : "bg-transparent"
       }`}
     >
