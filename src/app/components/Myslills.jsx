@@ -13,7 +13,7 @@ export default function MyScills() {
 
       {/* Technical Skills */}
       <section className="md:mt-10 mt-5 text-center">
-        <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white"> Technical &</span> Expertise</div>
+        <div className="text-xl md:text-2xl  font-bold text-center mb-14 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white"> Technical &</span> Expertise</div>
         
         <div className="grid md:grid-cols-3 gap-8">
           {/* Frontend */}
