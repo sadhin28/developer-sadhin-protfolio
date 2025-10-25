@@ -6,13 +6,13 @@ import SkillsMarque from "../components/SkillMarque";
 export default function MyScills() {
   return (
     <div className=" text-white py-16 ">
-      <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> My Skills<span className="text-white">  & Expertise</span></div>
+      <div className="text-xl md:text-2xl font-bold text-center mb-5 flex items-center justify-center gap-4 text-blue-500"> My Skills<span className="text-white">  & Expertise</span></div>
 
       {/*  Skills Marquee Section */}
       <SkillsMarque />
 
       {/* Technical Skills */}
-      <section className="mt-16 text-center">
+      <section className="mt-10 text-center">
         <div className="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-4 text-blue-500"> <span className="text-white"> Technical &</span> Expertise</div>
         
         <div className="grid md:grid-cols-3 gap-8">
