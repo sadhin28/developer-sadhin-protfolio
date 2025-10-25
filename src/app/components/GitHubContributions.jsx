@@ -56,7 +56,7 @@ const GitHubContributions = () => {
             htmlFor="year-select"
            
           >
-            <h1  className="visible  text-white text-xl   font-bold">Year</h1>
+            <h1  className="visible  text-xl   font-bold text-blue-500">Year</h1>
           </label>
           <select
             id="year-select"
