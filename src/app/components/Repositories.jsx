@@ -62,11 +62,11 @@ export default function Projects() {
 
 
       {/* Pagination Buttons */}
-      <div className="flex justify-center mt-8 gap-2 text-xs md:text-[18px]">
+      <div className="flex  justify-center  mt-8 gap-2 text-[10px] md:text-[18px]">
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-2 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
         >
           Prev
         </button>
@@ -90,7 +90,7 @@ export default function Projects() {
             setCurrentPage((prev) => Math.min(prev + 1, totalPages))
           }
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-2 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
         >
           Next
         </button>
