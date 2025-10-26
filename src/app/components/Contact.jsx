@@ -82,11 +82,11 @@ const ContactForm = () => {
         }
     ];
     return (
-        <div id="contact" className="">
+        <div id="contact" >
 
             <div className="md:flex items-center justify-between py-0">
 
-                <div className="px-4 space-y-1.5 text-gray-400 md:w-1/2">
+                <div className="space-y-1.5 text-gray-400 md:w-1/2 ">
                     <h2  className="text-xl md:text-2xl  md:text-start text-center md:py-2  font-bold text-white py-4">
                         Get In <span className="text-blue-500">Touch</span>
                     </h2>
@@ -97,7 +97,7 @@ const ContactForm = () => {
                             <a
                                 key={index}
                                 href={item.href}
-                                className="flex items-center space-x-4 p-4 bg-card rounded-lg border border-border hover:border-blue-600/50 shadow-2xl hover:shadow-blue-500 transition-all duration-300 hover:scale-[1.02] group"
+                                className="flex items-center space-x-4 p-4 overflow-x-auto bg-card rounded-lg border border-border hover:border-blue-600/50 shadow-2xl hover:shadow-blue-500 transition-all duration-300 hover:scale-[1.02] group"
                             >
                                 <div className="text-primary group-hover:scale-110 transition-transform duration-300">
                                     {item.icon}
@@ -131,7 +131,7 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                    <section className="w-full  px-4 py-12  text-white">
+                    <section className="w-full   py-12  text-white">
                         <div className="bg-gray-900/20 p-8 rounded-lg shadow-md border hover:shadow-lg ">
 
                             <form onSubmit={sendEmail} className="space-y-6">
