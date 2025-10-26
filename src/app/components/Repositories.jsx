@@ -34,28 +34,32 @@ export default function Projects() {
         My GitHub <span className="text-blue-600">Repositories</span>
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {currentRepos.map((repo) => (
-          <a
-            key={repo.id}
-            href={repo.html_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-6 border-2 border-gray-600 bg-gray-800 rounded-xl shadow-2xl hover:shadow-blue-500 hover:border-blue-500 hover:shadow-lg transition transform hover:-translate-y-1 duration-300 flex flex-col h-full"
-          >
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              {repo.name}
-            </h3>
-            <p className="text-gray-300 mb-4 flex-grow">
-              {repo.description || "No description"}
-            </p>
-            <div className="flex justify-between text-gray-400 text-sm mt-auto">
-              <span>{repo.language || "N/A"}</span>
-              <span>⭐ {repo.stargazers_count}</span>
-            </div>
-          </a>
-        ))}
+     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {currentRepos.map((repo) => (
+    <a
+      key={repo.id}
+      href={repo.html_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col justify-between w-full h-full p-6 border border-gray-700 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/50 hover:border-blue-500 transition-transform transform hover:-translate-y-1 duration-300"
+    >
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold text-blue-500 mb-2 truncate">
+          {repo.name}
+        </h3>
+        <p className="text-gray-300 text-sm md:text-base line-clamp-3 mb-4">
+          {repo.description || "No description available."}
+        </p>
       </div>
+
+      <div className="flex justify-between items-center text-gray-400 text-sm border-t border-gray-700 pt-3 mt-auto">
+        <span>{repo.language || "N/A"}</span>
+        <span>⭐ {repo.stargazers_count}</span>
+      </div>
+    </a>
+  ))}
+</div>
+
 
       {/* Pagination Buttons */}
       <div className="flex justify-center mt-8 gap-2 text-xs md:text-[18px]">
