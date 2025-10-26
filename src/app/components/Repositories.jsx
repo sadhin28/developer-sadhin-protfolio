@@ -29,7 +29,7 @@ export default function Projects() {
   const totalPages = Math.ceil(repos.length / REPOS_PER_PAGE);
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto p-4 mt-10">
+    <section id="projects" className="max-w-7xl mx-auto  mt-10">
       <h2 className="text-xl md:text-2xl font-bold text-white mb-8 text-center">
         My GitHub <span className="text-blue-600">Repositories</span>
       </h2>
