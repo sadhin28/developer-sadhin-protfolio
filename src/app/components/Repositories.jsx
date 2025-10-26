@@ -68,7 +68,7 @@ export default function Projects() {
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo);
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-4 py-10">
+    <section id="projects" className="max-w-7xl mx-auto  py-10">
       <h2 className="text-3xl font-bold text-center mb-10 dark:text-white">
         My GitHub <span className="text-blue-500">Repositories</span>
       </h2>

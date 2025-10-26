@@ -44,7 +44,7 @@ const GitHubContributions = () => {
   const years = [currentYear, currentYear - 1];
 
   return (
-    <section className="text-center px-4 max-w-7xl">
+    <section className="text-center px-1 max-w-7xl">
       <h2 className="text-xl md:text-2xl font-bold py-5 mb-4 text-white">
         My GitHub <span className="text-blue-600">Contributions</span>
       </h2>
