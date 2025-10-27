@@ -66,6 +66,7 @@ const About = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in-right">
                         {highlights.map((item, index) => (
                             <div
+                            data-aos="zoom-in" data-aos-delay="200"
                                 key={index}
                                 className="p-6  bg-gray-600/10 hover:shadow-blue-600 shadow-2xl backdrop-blur-lg  rounded-xl border border-border hover:border-blue-600/50 transition-all duration-300 hover:scale-105 group"
                             >

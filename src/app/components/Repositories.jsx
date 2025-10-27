@@ -1,4 +1,5 @@
 "use client";
+import AOS from "aos";
 import { useEffect, useState } from "react";
 
 const REPOS_PER_PAGE = 6;
@@ -46,6 +47,14 @@ export default function Projects() {
 
     fetchRepos();
   }, []);
+    //Aos init    
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (ms)
+      once: true, // animation runs once
+      easing: "ease-in-out", // smooth transition
+    });
+  }, []);
 
   if (loading)
     return (
@@ -75,9 +84,10 @@ export default function Projects() {
       </h2>
 
       {/* Repos Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div data-aos="zoom-in" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentRepos.map((repo) => (
           <a
+            data-aos="zoom-in"
             key={repo.id}
             href={repo.html_url}
             target="_blank"
