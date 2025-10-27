@@ -73,7 +73,7 @@ export default function Projects() {
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo);
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto py-10 px-4">
+    <section id="projects" className="max-w-7xl mx-auto py-10">
       {/* Heading */}
       <h2
         data-aos="fade-down"
