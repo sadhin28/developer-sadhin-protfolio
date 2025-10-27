@@ -118,7 +118,7 @@ export default function Projects() {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="px-3 py-1 bg-gray-700 text-white rounded disabled:opacity-50"
+            className="px-2 py-1 bg-gray-700 text-white rounded disabled:opacity-50"
           >
             Prev
           </button>
