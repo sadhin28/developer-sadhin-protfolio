@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const REPOS_PER_PAGE = 12;
+const REPOS_PER_PAGE = 9;
 const GITHUB_USERNAME = "sadhin28";
 const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN; // optional (for private or rate-limit free requests)
 
