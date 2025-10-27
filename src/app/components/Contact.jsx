@@ -89,7 +89,7 @@ const ContactForm = () => {
             Get In <span className="text-blue-500">Touch</span>
           </h2>
           <p className="text-justify">
-            I'm always excited to collaborate on new projects and discuss
+            I am always excited to collaborate on new projects and discuss
             innovative solutions. Whether you need a full-stack web application,
             consultation on MERN stack development, or just want to say hello,
             I'd love to hear from you.
