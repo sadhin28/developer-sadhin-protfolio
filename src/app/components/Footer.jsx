@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold text-blue-500 mb-3"><span className="text-white">TAOSIF </span>SADHIN</h2>
           <p className="text-sm leading-6">
-            I’m a passionate Frontend & Full-Stack Developer who loves creating
+            I’m a passionate Frontend & MERN-Stack Developer who loves creating
             modern, responsive, and high-quality web experiences.
           </p>
         </div>
