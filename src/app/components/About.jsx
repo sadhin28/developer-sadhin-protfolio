@@ -68,9 +68,9 @@ const About = () => {
                             <div
                             data-aos="zoom-in" data-aos-delay="200"
                                 key={index}
-                                className="p-6  bg-gray-600/10 hover:shadow-blue-600 shadow-2xl backdrop-blur-lg  rounded-xl border border-border hover:border-blue-600/50 transition-all duration-300 hover:scale-105 group"
+                                className="p-6  bg-gray-600/10 hover:shadow-blue-600 shadow-2xl backdrop-blur-lg  rounded-xl border border-border hover:border-blue-600/50 transition-all duration-600 hover:scale-105 group"
                             >
-                                <div className="text-primary mb-4 group-hover:scale-100 transition-transform duration-300">
+                                <div className="text-primary mb-4 group-hover:scale-100 transition-transform duration-600">
                                     {item.icon}
                                 </div>
                                 <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
