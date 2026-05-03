@@ -78,7 +78,7 @@ export default function Footer() {
       {/* Divider & Copyright */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
         © {new Date().getFullYear()}{" "}
-        <span className="text-blue-500 font-semibold">Shadin</span>. All rights reserved.
+        <span className="text-blue-500 font-semibold">Taosif Bin Sadhin</span>. All rights reserved.
       </div>
     </footer>
   );
