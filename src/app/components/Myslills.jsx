@@ -107,7 +107,7 @@ const softSkills = [
 function SectionHeading({ label, title, description }) {
   return (
     <div className="mb-10 text-center sm:mb-12">
-      <span className="mb-3 inline-block rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">
+      <span className="mb-3 inline-block rounded-full border border-blue-500/30  px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">
         {label}
       </span>
 

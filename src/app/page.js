@@ -29,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
 
-        <div className="mx-auto grid max-w-7xl items-center gap-10 rounded-2xl py-8 md:grid-cols-2 md:gap-8 lg:py-14">
+        <div className="mx-auto grid max-w-9xl items-center gap-10 rounded-2xl py-8 md:grid-cols-2 md:gap-8 lg:py-14">
 
           {/* Introduction */}
           <div className="flex min-h-[180px] w-full flex-col justify-center text-center md:items-start md:text-left">
@@ -38,7 +38,7 @@ export default function Home() {
               Welcome to my portfolio
             </p>
 
-            <div className="min-h-[100px] text-xl font-bold leading-relaxed text-white sm:text-2xl md:text-3xl lg:text-4xl">
+            <div className="min-h-[100px] text-xl font-bold leading-relaxed text-white sm:text-2xl md:text-2xl lg:text-3xl">
 
               <Typewriter
                 options={{
@@ -68,7 +68,7 @@ export default function Home() {
 
             <div className="relative">
 
-              <div className="absolute inset-0 rounded-full bg-blue-600/20 blur-3xl" />
+              <div className="absolute inset-0 rounded-full  blur-3xl" />
 
               <Image
                 src={protfolioImg}
